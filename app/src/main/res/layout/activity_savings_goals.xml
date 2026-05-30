@@ -2,18 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_border"
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/titleText"
+        android:id="@+id/titleSavings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Categories"
-        android:textSize="30sp"
+        android:text="💰 Savings Goals"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,70 +20,86 @@
         android:layout_marginTop="40dp"/>
 
     <EditText
-        android:id="@+id/categoryEditText"
+        android:id="@+id/etGoalName"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:hint="Enter category"
+        android:hint="Goal name (e.g. Holiday)"
         android:importantForAutofill="no"
         android:inputType="text"
         android:padding="12dp"
         android:background="@android:drawable/edit_text"
-        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintTop_toBottomOf="@id/titleSavings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/etTargetAmount"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Target amount (R)"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintTop_toBottomOf="@id/etGoalName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
 
     <Button
-        android:id="@+id/addButton"
+        android:id="@+id/btnAddGoal"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:text="Create"
+        android:text="Add Goal"
         android:backgroundTint="#2196F3"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/categoryEditText"
+        app:layout_constraintTop_toBottomOf="@id/etTargetAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <ListView
+        android:id="@+id/savingsListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAddGoal"
+        app:layout_constraintBottom_toTopOf="@id/tvSelectedGoal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <ListView
-        android:id="@+id/listView"
+    <TextView
+        android:id="@+id/tvSelectedGoal"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/addButton"
-        app:layout_constraintBottom_toTopOf="@id/btnGoToGoals"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:id="@+id/btnGoToGoals"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:text="Set Monthly Goals"
-        android:backgroundTint="#2196F3"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@id/btnGamification"
+        android:layout_height="wrap_content"
+        android:text="No goal selected"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintBottom_toTopOf="@id/etContribution"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="8dp"/>
 
-    <Button
-        android:id="@+id/btnGamification"
+    <EditText
+        android:id="@+id/etContribution"
         android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:text="🎮 Rewards"
-        android:backgroundTint="#FF9800"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@id/btnSavingsGoals"
+        android:layout_height="55dp"
+        android:hint="Contribution amount (R)"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintBottom_toTopOf="@id/btnContribute"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="12dp"/>
 
     <Button
-        android:id="@+id/btnSavingsGoals"
+        android:id="@+id/btnContribute"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:text="💰 Savings Goals"
+        android:text="Add Contribution"
         android:backgroundTint="#4CAF50"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
