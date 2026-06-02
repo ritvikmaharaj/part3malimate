@@ -17,6 +17,9 @@ class CategoryActivity : AppCompatActivity() {
     private lateinit var button: Button
     private lateinit var listView: ListView
     private lateinit var btnGoToGoals: Button
+    private lateinit var btnAddExpense: Button
+    private lateinit var btnSearchCategory: Button
+    private lateinit var btnSearchExpense: Button
     private lateinit var btnGamification: Button
     private lateinit var btnSavingsGoals: Button
 
@@ -33,6 +36,9 @@ class CategoryActivity : AppCompatActivity() {
         button = findViewById(R.id.addButton)
         listView = findViewById(R.id.listView)
         btnGoToGoals = findViewById(R.id.btnGoToGoals)
+        btnAddExpense = findViewById(R.id.btnAddExpense)
+        btnSearchCategory = findViewById(R.id.btnSearchCategory)
+        btnSearchCategory = findViewById(R.id.btnSearchCategory)
         btnGamification = findViewById(R.id.btnGamification)
         btnSavingsGoals = findViewById(R.id.btnSavingsGoals)
 
@@ -56,6 +62,18 @@ class CategoryActivity : AppCompatActivity() {
 
         btnGoToGoals.setOnClickListener {
             startActivity(Intent(this, GoalsActivity::class.java))
+        }
+
+        btnAddExpense.setOnClickListener {
+            startActivity(Intent(this, AddExpenseActivity::class.java))
+        }
+
+        btnSearchCategory.setOnClickListener {
+            startActivity(Intent(this, CategorySearchActivity::class.java))
+        }
+
+        btnSearchExpense.setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
         }
 
         btnGamification.setOnClickListener {
