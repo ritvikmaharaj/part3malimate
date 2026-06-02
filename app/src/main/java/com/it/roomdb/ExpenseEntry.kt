@@ -1,4 +1,4 @@
-package com.example.yourapp
+package com.it.roomdb
 
 import android.os.Bundle
 import android.widget.Button
