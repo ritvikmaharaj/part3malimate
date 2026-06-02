@@ -5,10 +5,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.it.roomdb.Expense
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.it.roomdb.R
 
 class ExpenseEntryActivity : AppCompatActivity() {
 
