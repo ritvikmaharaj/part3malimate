@@ -9,22 +9,22 @@
 
     <EditText
         android:id="@+id/etCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Category"/>
+        android:layout_width="378dp"
+        android:layout_height="66dp"
+        android:hint="Category" />
 
     <EditText
         android:id="@+id/etAmount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="392dp"
+        android:layout_height="57dp"
         android:hint="Amount"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/etDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="2026-05-28"/>
+        android:layout_width="394dp"
+        android:layout_height="71dp"
+        android:hint="2026-05-28" />
 
     <Button
         android:id="@+id/btnSave"
