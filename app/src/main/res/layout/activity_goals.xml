@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Goals"
+            android:textColor="#1E293B"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track your monthly spending progress"
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Minimum Goal -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum Goal"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:textSize="16sp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etMinGoal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Enter minimum amount"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textSize="16sp" />
+
+        <!-- Maximum Goal -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum Goal"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etMaxGoal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Enter maximum amount"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textSize="16sp" />
+
+        <!-- Save Button -->
+
+        <Button
+            android:id="@+id/btnSaveGoals"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2563EB"
+            android:text="Save Goals"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Goal Status Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal Overview"
+                android:textColor="#1E293B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGoalStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Goal Status"
+                android:textColor="#475569"
+                android:textSize="16sp" />
+
+            <!-- Progress Bar -->
+
+            <ProgressBar
+                android:id="@+id/progressBudget"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#2563EB" />
+
+            <!-- Percentage -->
+
+            <TextView
+                android:id="@+id/tvPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="0% of budget used"
+                android:textColor="#1E293B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Budget Feedback -->
+
+            <TextView
+                android:id="@+id/tvBudgetFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Budget Status"
+                android:textColor="#16A34A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
