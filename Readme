@@ -1,2 +1,62 @@
-Youtube link:
+
+
+# MaliMate 💚 — Personal Budget Tracker
+
+MaliMate is a personal budgeting Android application built with Kotlin, designed to help users take control of their finances in a fun and engaging way. The app combines powerful budgeting tools with gamification elements to make managing money enjoyable and rewarding.
+
+---
+
+## Purpose
+Many people struggle to track their spending habits and maintain consistent savings goals. MaliMate solves this by providing a simple, structured, and motivating platform to monitor income, expenses, and savings — all from your Android device.
+
+---
+
+## Features
+
+### Core Features
+- **User Authentication** — Secure registration and login system using Room database
+- **Expense Categories** — Create and manage custom spending categories
+- **Expense Tracking** — Log expenses with date, time, description, category and optional photo
+- **Expense Search** — Filter and view expenses by date range
+- **Category Spending Totals** — View total spending per category over a selected period
+- **Monthly Spending Goals** — Set minimum and maximum monthly spending targets
+- **Spending Graph** — Visual bar chart showing spending per category against goals
+- **Firebase Integration** — Data stored securely in an online Firebase database
+
+### Own Features
+- **Gamification System** — Earn points and unlock badges by logging transactions and achieving savings goals. Progress through levels from Beginner to MaliMate Champion
+- **Savings Goals Tracker** — Create named savings goals with target amounts, make contributions, and track progress visually. Completing a goal awards bonus gamification points
+
+---
+
+## Tech Stack
+- **Language:** Kotlin
+- **Database:** Room DB (local) + Firebase Realtime Database (online)
+- **Architecture:** Activity-based with DAO pattern
+- **Charts:** MPAndroidChart
+- **Min SDK:** 24
+- **Target SDK:** 36
+
+---
+
+
+## Video Demonstration
+
 https://youtu.be/B37FOwDNZHE
+
+---
+
+## Team
+- Saheel Bhugwandeen — ST10440943
+- Esethu Lushaba — ST10447469
+- Ritvik Maharaj — ST10438117
+- Chase Miller — ST10433939
+
+---
+
+## References
+- Spendee: https://www.spendee.com
+- GoodBudget: https://www.goodbudget.com
+- YNAB: https://www.ynab.com
+- MPAndroidChart: https://github.com/PhilJay/MPAndroidChart
+- Firebase: https://firebase.google.com
